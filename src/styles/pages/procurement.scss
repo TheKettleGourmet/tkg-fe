@@ -1,0 +1,209 @@
+@use '../variables/colors.scss';
+@use '../variables/fonts.scss';
+@use '../common/common.scss';
+
+.procurement-orders {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.procurement-grid-toolbar {
+  width: 40%;
+  display: flex;
+  padding: 0 0 1em;
+  gap: 15px 15px;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.create-procurement-order {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.create-procurement-order-heading {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+}
+
+.modal-alert {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.create-procurement-order-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+
+.create-procurement-order-paper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.create-procurement-order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 20px;
+  margin: 2% 2% 2% 2%;
+}
+
+.order-items-section {
+  padding-top: 2rem;
+}
+
+.text-fields {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.horizontal-text-fields {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.horizontal-text-fields-two {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.create-button-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.modal-text-fields {
+  display: flex;
+  width: 80%;
+  padding-left: 2rem;
+}
+
+.view-order-details {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.view-order-details-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  padding-bottom: 0rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  width: 100%;
+  align-items: center;
+}
+
+.view-details-button-container {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  width: max-content;
+  padding-right: 4rem;
+  gap: 10px 10px;
+  margin: 2% 2% 2% 2%;
+  width: 80%;
+}
+
+.order-details-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 4rem;
+}
+
+.pdf-container {
+  background-color: gray;
+  width: 20px;
+  height: 5px;
+  padding-left: 8rem;
+}
+
+.order-details-paper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 2% 2% 2% 2%;
+}
+
+.status-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.data-table-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+}
+
+.Toastify__toast--success {
+  border: 1px solid #3a9ea5 !important;
+  background: #f0f9fa !important;
+}
+.Toastify__toast--success::before {
+  position: relative;
+  z-index: 100000;
+  left: 12px;
+  top: 6px;
+}
+.Toastify__toast--success::after {
+  position: absolute;
+  color: #333333;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 700;
+  left: 265px;
+  padding-top: 14px !important;
+}
+
+.toastBody {
+  font-family: 'Poppins';
+}

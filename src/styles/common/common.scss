@@ -1,0 +1,78 @@
+@use '../variables/colors.scss';
+
+.container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-center-col {
+	@extend .container-center;
+	flex-direction: column;
+}
+
+.container-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.container-spread {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly
+}
+
+.container-center-padding {
+	@extend .container-center;
+	padding: 2em;
+}
+
+.container-center-col-padding {
+	@extend .container-center-col;
+	padding: 2em;
+}
+
+.container-left-padding {
+	@extend .container-left;
+	padding: 2em;
+}
+
+.container-spread-padding {
+	@extend .container-spread;
+	padding: 2em
+}
+
+.horizontal-inline-bar {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.full-btn {
+	width: 100%;
+}
+
+.view-button-group {
+  margin: 1% 1% 1% 1%;
+  justify-content: flex-end;
+}
+
+.full-divider {
+	width: 100%;
+}
+
+.card {
+	padding: 0 2em 2em;
+	display: flex;
+	flex-direction: column;
+}
+
+.number-card {
+	padding: 0 2em 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 20vh;
+}
