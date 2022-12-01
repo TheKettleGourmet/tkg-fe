@@ -250,10 +250,10 @@ const App = () => {
                     path='delivery/allManualDeliveries'
                     element={<AllManualDeliveries />}
                   />
-                  <Route
+                  {/* <Route
                     path='delivery/routePlanning'
                     element={<RoutePlanning />}
-                  />
+                  /> */}
                   <Route
                     path='delivery/createDelivery'
                     element={<CreateDeliveryOrder />}
@@ -292,7 +292,7 @@ const App = () => {
                     path='customer/customerDetails'
                     element={<CustomerDetails />}
                   />
-                  <Route
+                  {/* <Route
                     path='customer/allSentNewsletters'
                     element={<AllSentNewsletters />}
                   />
@@ -319,7 +319,7 @@ const App = () => {
                   <Route
                     path='customer/viewScheduledNewsletter'
                     element={<ViewScheduledNewsletter />}
-                  />
+                  /> */}
 
                   {/* --- Sales Routes --- */}
                   <Route

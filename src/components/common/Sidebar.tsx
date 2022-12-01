@@ -177,10 +177,10 @@ const Sidebar = ({
             icon={<LocalShipping />}
             disabled={disabled}
           >
-            <ListItemLink
+            {/* <ListItemLink
               primary='Delivery Route Planner'
               to='/delivery/routePlanning'
-            />
+            /> */}
             <ListItemLink
               primary='Delivery Assignment'
               to='/delivery/myDeliveryAssignment'
@@ -211,7 +211,7 @@ const Sidebar = ({
               primary='Discount Codes'
               to='discountCode/allDiscountCodes'
             /> */}
-            <ListItemLink
+            {/* <ListItemLink
               primary='Newsletter Templates'
               to='customer/allNewsletterTemplates'
             />
@@ -222,7 +222,7 @@ const Sidebar = ({
             <ListItemLink
               primary='Sent Newsletters'
               to='customer/allSentNewsletters'
-            />
+            /> */}
           </NestedList>
 
           <RoleComponent allowedRoles={[UserRole.ADMIN]}>
