@@ -91,7 +91,6 @@ const ViewAccount = () => {
           <div className='header-content'>
             <h1>View User Account </h1>
             <div className='button-group'>
-              {loading && <CircularProgress color='secondary' />}
               {user?.status !== UserStatus.PENDING &&
                 user?.status !== UserStatus.REJECTED && (
                   <AccountEditButtonGrp

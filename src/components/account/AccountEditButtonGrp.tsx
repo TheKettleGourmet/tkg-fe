@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button, CircularProgress } from '@mui/material';
 import { useState } from 'react';
 import { User, UserStatus } from 'src/models/types';
 import {
@@ -183,6 +183,7 @@ const AccountEditButtonGrp = ({
       />
 
       <div className='button-group'>
+      {loading && <CircularProgress color='secondary' />}
         {edit && (
           <Button
             variant='contained'
