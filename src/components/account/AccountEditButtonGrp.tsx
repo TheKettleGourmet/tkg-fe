@@ -1,4 +1,4 @@
-import { CircularProgress, Button } from '@mui/material';
+import { Button } from '@mui/material';
 import { useState } from 'react';
 import { User, UserStatus } from 'src/models/types';
 import {
@@ -83,6 +83,7 @@ const AccountEditButtonGrp = ({
   };
 
   const deleteAccount = () => {
+    setLoading(true);
     setModalOpen(false);
     id &&
       asyncFetchCallback(
@@ -94,10 +95,12 @@ const AccountEditButtonGrp = ({
               'Account deleted. You will be redirected back to the Accounts page.'
           });
           setModalOpen(false);
+          setLoading(false);
           setTimeout(() => navigate(`${deletePath}`), 3500);
         },
         () => {
           setModalOpen(false);
+          setLoading(false);
           setAlert({
             severity: 'error',
             message: 'Cannot delete user at this point. Try again later.'
@@ -180,7 +183,6 @@ const AccountEditButtonGrp = ({
       />
 
       <div className='button-group'>
-        {loading && <CircularProgress color='secondary' />}
         {edit && (
           <Button
             variant='contained'
