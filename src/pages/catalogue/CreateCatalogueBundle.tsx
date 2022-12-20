@@ -117,6 +117,10 @@ const CreateCatalogueBundle = () => {
             }),
           (err) => console.log(err)
         );
+        setNewBundleCatalogue((prev) => ({
+          ...prev,
+          file: e.target.files![0]
+        }));
       }
     }
   };
@@ -127,8 +131,13 @@ const CreateCatalogueBundle = () => {
     if (newBundleCatalogue) {
       console.log('newBundleCatalogue: ', newBundleCatalogue);
       setLoading(true);
+      let formData = new FormData();
+      formData.append('file', newBundleCatalogue.file as File);
+      formData.append('price', String(newBundleCatalogue.price));
+      formData.append('bundle', JSON.stringify(newBundleCatalogue.bundle));
+      formData.append('description', String(newBundleCatalogue.description));
       await asyncFetchCallback(
-        createBundleCatalogue(newBundleCatalogue as BundleCatalogue),
+        createBundleCatalogue(formData),
         () => {
           setLoading(false);
           setAlert({
